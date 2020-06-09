@@ -16,7 +16,7 @@ a{
     text-decoration: none;
 }
 a:link{
-    color:#D0D2D8;
+    color:dimgray;
 }
 
 /*-- NAVIGATION -----------------------*/
@@ -44,13 +44,19 @@ nav li a:hover{
 a:visited{
     color:#D0D2D8;
 }
+
+
+nav a.active{
+    color: #3B1255;
+    border-bottom: 2px solid #3B1255;
+}
 /*-- END NAVIGATION -----------------------*/
 /*------------------------------------------*/
 
 
 /*-- ALL SECTIONS -----------------------*/
 h1{
-    font-size:2em;
+    font-size:2.3em;
 }
 h2{
     font-size: 2em;
@@ -63,6 +69,11 @@ h2{
 .container p{
     font-size:1.1em;
 }
+
+.bold {
+    font-weight: 510;
+}
+
 
 /*-- HOME -----------------------*/
 .home{
@@ -108,6 +119,40 @@ h2{
 .about a:hover{
     text-decoration: underline;
 }
+
+.lst1{
+    width:10%;
+    float:left;
+}
+
+.list2{
+    margin-left: 10%;
+}
+
+.narrow{
+    margin-bottom:0;
+}
+
+.center{
+    margin:auto;
+    width: 50%;
+    padding-top: 20px;
+}
+
+.list1{
+    width:40%;
+    float:left;
+    margin-left: 100px;
+}
+.list2{
+    margin-left: 40%;
+    margin-top: 35px;    
+}
+
+.cent{
+    text-align: center;
+}
+
 /*-- END ABOUT -----------------------*/
 /*------------------------------------------*/
 

@@ -4,10 +4,13 @@
         <title>Nafisa Arain | Web Designer &amp; Front End Developer</title>
         <link rel="stylesheet" type="text/css" href="main.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+        <link rel="icon" type="image" href="images/headshot.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <scipt src="/script.js"></scipt>
     </head>
     <body>
         <nav>
-            <ul>
+            <ul id="mainNav">
                 <li> <a href="#home">Home</a></li>
                 <li> <a href="#about">About</a></li>
                 <li> <a href="#portfolio">Portfolio</a></li>
@@ -19,7 +22,7 @@
         <div class="container home" id="home">
             <div class="banner">
                 <h1>Nafisa Arain</h1>
-                <h2>web designer &amp; front-end developer.</h2>
+                <h2>designer &amp; developer.</h2>
                 <p>scroll down to see my projects</p>
             </div>
         </div>
@@ -28,25 +31,48 @@
         
         
         <!-- ABOUT ----------------------->
-        <div class="container about" id="about">
+        <section class="container about" id="about">
             <h2>About Me</h2>
             <h3><img src="images/headshot.png" alt="headshot" id="headshot">Hi, I'm Nafisa.</h3>
-            <p>I'm passionate about creativity and design. I recently graduated from UC Irvine with a BS in Math and a minor in stats. I'm self-taught in web programming.</p>
-            <p>When I'm not making a website I enjoy playing <a href="http://soundcloud.com/nakeysa-piano" target="_blank">piano</a> and guitar, reading novels, and solving math puzzles. I also love snowboarding and cake decorating with my little sister.</p>
-            <p>Scroll down to see some of my web projects.</p>
-            <div class="images">
+            <p>I'm passionate about creativity, data, and design. I recently graduated from UC Berkeley with a Master's in Statistics. I hold a BS in Mathematics and minor in statistics from UC Irvine. I'm self-taught in web programming.</p>
+            <p>When I'm not doing math, coding, or exploring data I enjoy playing <a href="http://soundcloud.com/nakeysa-piano" target="_blank">piano</a> and guitar and reading novels. I also love snowboarding and cake decorating.</p>
+            
+            <div class="center">
+                <p class="bold cent">Technical Skills</p>
+                
+                <div class="list1"><p class="narrow">Intermediate</p>
+                    <ul>
+                        <li>R</li>
+                        <li>C++</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>LaTex</li>
+                        <li>Photoshop</li>
+                    </ul>
+                </div>
+                <div class="list2">
+                    <p class="narrow">Beginner</p>
+                    <ul>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+            
+           <!-- <div class="images">
                 <img src="images/html5.png" alt="html5" class="icon">
                 <img src="images/AdobePhotoshop.png" alt="AdobePhotoshop" class="icon">
                 <img src="images/CSS3.png" alt="css3" class="icon">
-            </div>
-        </div>
+            </div> -->
+        </section>
         <!-- END ABOUT ----------------------->
         <!--------------------------------------------------->
         
         
         <!-- PORTFOLIO ----------------------->
-        <div class="container portfolio" id="portfolio">
+        <section class="container portfolio" id="portfolio">
             <h2>Portfolio</h2>
+            <p class="purple">I'm always looking for more creative ways to expand upon the math, statistics, and logic foundations I gained through my coursework. (This website, coded from scratch, is one of my hobby projects!) While working as a graduate student instructor for undergraduate calculus and statistics courses, I applied my data analysis skills in R and C++ to provide dynamic feedback, guidance, and resources to my students. I also coded <a href="http://nafisagsi.github.io" target ="_blank">this website</a> as a resource for my students. Below are some additional projects.</p>
             <div class="sample">
                 <div class="cont">
                     <a href="https://github.com/nafisaarain/bofp" target="_blank"><img src="/images/BOFPig.png" alt="BOFP instagram blog" class="sampleImg left"></a>
@@ -84,33 +110,34 @@
                     </div>
                 </div>
                 
-                <p><strong>CSS Variables</strong></p>
-                <p>Interactive webpage featuring image with adjustable blur strength, border size, and border color.</p>
+                <p><strong>Image Editing</strong></p>
+                <p>Interactive photo-editing webpage.</p>
                 <p>Coded as part of the JavaScript 30 Challenge (link in code).</p>
                 <h5 class="lang">HTML</h5>
                 <h5 class="lang">CSS</h5>
                 <h5 class="lang">JavaScript</h5>
 
             </div>
-        </div>
+        </section>
         <!-- END PORTFOLIO ----------------------->
         <!--------------------------------------------------->
         
         
         <!-- CONTACT ----------------------->
-        <div class="container contact" id="contact">
+        <section class="container contact" id="contact">
             <h2>Contact</h2>
             <h3>Let's build something together!</h3>
-            <p>I'm always open to discussing design work or partnership opportunities</p>
+            <p>I'm open to discussing software design/development opportunities!</p>
             <div class="contactInfo">
                 <a href="mailto:nafisaarain@gmail.com" target="_blank"><img src="images/email.png" alt="email" style="height:30px; width:auto; border:0;"></a>
                 <a href="mailto:nafisaarain@gmail.com" target="_blank">nafisaarain@gmail.com</a>
             </div>
-            <div class="contactInfo">
+           <!-- <div class="contactInfo">
                 <a href="https://github.com/nafisaarain" target="_blank"><img src="images/gitHub.png" alt="my gitHub" style="height:40px; width:auto; border:0;"></a>
                 <a href="https://github.com/nafisaarain" target="_blank">Visit my GitHub profile</a>
             </div>
-        </div>
+-->
+        </section>
         <!-- END CONTACT ----------------------->
         <!--------------------------------------------------->
         
@@ -123,10 +150,12 @@
             <a href="https://github.com/nafisaarain" target="_blank">
                 <img src="/images/gitHub.png" alt="gitHub profile" style="width: auto; height: 30px; border:0">
             </a>
-            <p>Copyright &copy; 2018 | Nafisa Arain</p>
+            <p>Copyright &copy; 2020 | Nafisa Arain</p>
         </footer>
         <!-- END FOOTER ----------------------->
         <!--------------------------------------------------->
+        
+        <!--NEXT:Responsize design/clean up-->
         
     </body>
 
